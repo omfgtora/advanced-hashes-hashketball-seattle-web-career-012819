@@ -162,7 +162,7 @@ def big_shoe_rebounds
   for player in all_players
     puts player[0]
     stats = player_stats(player[0])
-    puts stats
+    #puts stats
     if stats[:shoe] > player_stats(biggest_shoe[0])[:shoe]
       biggest_shoe = player
     end
