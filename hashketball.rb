@@ -146,8 +146,9 @@ def team_names
   teams.collect {|x| x[:team_name]}
 end
 
-def player_numbers
-  all_players.collect {|player| player[:number]}
+def player_numbers(team)
+  team = get_team(team)
+  team.collect {|player| player[:number]}
 end
 
 def player_stats(player)
