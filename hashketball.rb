@@ -168,6 +168,13 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  most_points = all_players.first
+  for player in all_players
+    if player[1][:points] > most_points[1][:points]
+      biggest_shoe = player
+    end
+  end
+  biggest_shoe[1][:rebounds]
 end
 
 def winning_team
