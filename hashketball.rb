@@ -200,6 +200,6 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  longest_name = player_with_longest_name
-  for each
+  longest_name_steals = player_stats(player_with_longest_name)[:steals]
+  all_players.any? {|player| player[1][:steals] > longest_name_steals}
 end
