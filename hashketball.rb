@@ -171,7 +171,7 @@ def most_points_scored
   most_points = all_players.first
   for player in all_players
     if player[1][:points] > most_points[1][:points]
-      biggest_shoe = player
+      most_points = player
     end
   end
   most_points[0]
