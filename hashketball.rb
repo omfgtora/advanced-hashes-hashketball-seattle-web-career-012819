@@ -119,6 +119,10 @@ def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
+def teams
+  game_hash[:home].merge(game_hash[:away])
+end
+
 def num_points_scored(player)
   player = all_players.fetch(player)
   player[:points]
