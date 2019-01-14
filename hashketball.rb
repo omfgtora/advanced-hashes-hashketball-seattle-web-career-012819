@@ -135,6 +135,7 @@ end
 
 def team_colors(team)
   team = teams.fetch(team)
+  puts teams
   team[:colors]
 end
 
