@@ -123,8 +123,8 @@ def teams
   game_hash[:home].merge(game_hash[:away])
 end
 
-def get_team(team)
-  teams.find {|team| team.fetch(:team_name) == team_name}
+def get_team(name)
+  teams.find {|team| team.fetch(:team_name) == name}
 end
 
 def num_points_scored(player)
