@@ -184,7 +184,7 @@ def winning_team
     home_points += player[1][:points]
   }
   game_hash[:away][:players].each {|player|
-    away += player[1][:points]
+    away_points += player[1][:points]
   }
   home_points > away_points ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end
