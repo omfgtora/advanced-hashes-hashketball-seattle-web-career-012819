@@ -123,7 +123,7 @@ def teams
   game_hash[:home].merge(game_hash[:away])
 end
 
-def get_team
+def get_team(team)
   teams.find {|team| team.fetch(:team_name) == team_name}
 end
 
@@ -138,7 +138,7 @@ def shoe_size(player)
 end
 
 def team_colors(team)
-  team = teams.fetch(team)
+  team = get_team.fetch(team)
   team[:colors]
 end
 
