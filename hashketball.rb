@@ -149,6 +149,7 @@ end
 
 def player_numbers(team)
   team = get_team(team)
+  binding.pry
   team[:players].collect {|player| player[:number]}
 end
 
