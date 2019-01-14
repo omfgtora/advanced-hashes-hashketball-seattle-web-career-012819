@@ -159,7 +159,9 @@ end
 def big_shoe_rebounds
   biggest_shoe = nil
   for player in all_players
-    if player[:shoe] > biggest_shoe[:shoe]
+    if biggest_shoe == nil
+      
+    elsif player[:shoe] > biggest_shoe[:shoe]
       biggest_shoe = player
     end
   end
