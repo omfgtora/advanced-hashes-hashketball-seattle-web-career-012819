@@ -160,7 +160,7 @@ def big_shoe_rebounds
   #binding.pry
   biggest_shoe = all_players.first
   for player in all_players
-    if player[1][:shoe] > player_stats(biggest_shoe[0])[:shoe]
+    if player[1][:shoe] > biggest_shoe[1][:shoe]
       biggest_shoe = player
     end
   end
