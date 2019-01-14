@@ -190,6 +190,7 @@ def winning_team
 end
 
 def player_with_longest_name
+  longest_name = all_players.first[0]
 end
 
 def long_name_steals_a_ton?
