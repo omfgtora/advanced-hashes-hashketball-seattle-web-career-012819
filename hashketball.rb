@@ -157,6 +157,7 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
+  binding.pry
   biggest_shoe = all_players[0]
   for player in all_players
     stats = player_stats(player.key)
