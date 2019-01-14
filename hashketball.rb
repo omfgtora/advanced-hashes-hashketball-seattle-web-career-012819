@@ -180,7 +180,6 @@ end
 def winning_team
   home_points = 0
   away_points = 0
-  puts home_points
   game_hash[:home][:players].each {|player|
     home_points += player[1][:points]
   }
