@@ -157,6 +157,7 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
+  biggest_shoe = []
 end
 
 def most_points_scored
