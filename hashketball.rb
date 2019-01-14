@@ -191,6 +191,11 @@ end
 
 def player_with_longest_name
   longest_name = all_players.first[0]
+  for player in all_players
+    if player[0].length > longest_name
+      longest_name = player[0]
+    end
+    longest_name
 end
 
 def long_name_steals_a_ton?
