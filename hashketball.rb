@@ -157,7 +157,10 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  biggest_shoe = {}
+  biggest_shoe = nil
+  for player in all_players
+    if player[:shoe] > biggest_shoe[:shoe]
+  end
 end
 
 def most_points_scored
