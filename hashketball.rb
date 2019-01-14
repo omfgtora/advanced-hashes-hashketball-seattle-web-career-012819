@@ -159,7 +159,7 @@ end
 def big_shoe_rebounds
   biggest_shoe = all_players[0]
   for player in all_players
-    stats = player_stats(player)
+    stats = player_stats(player.key)
     if stats[:shoe] > player_stats(biggest_shoe)[:shoe]
       biggest_shoe = player
     end
