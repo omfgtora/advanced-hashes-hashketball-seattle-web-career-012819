@@ -164,7 +164,7 @@ def big_shoe_rebounds
       biggest_shoe = player
     end
   end
-  player_stats(biggest_shoe)[:rebounds]
+  biggest_shoe[1][:rebounds]
 end
 
 def most_points_scored
