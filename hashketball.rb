@@ -174,7 +174,7 @@ def most_points_scored
       biggest_shoe = player
     end
   end
-  biggest_shoe[1][:rebounds]
+  most_points[1][:rebounds]
 end
 
 def winning_team
