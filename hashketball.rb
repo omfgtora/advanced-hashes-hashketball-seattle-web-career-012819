@@ -148,7 +148,7 @@ end
 
 def player_numbers(team)
   team = get_team(team)
-  team.collect {|player| player[:number]}
+  team[:players].collect {|player| player[:number]}
 end
 
 def player_stats(player)
