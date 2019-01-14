@@ -192,7 +192,7 @@ end
 def player_with_longest_name
   longest_name = all_players.first[0]
   for player in all_players
-    if player[0].length > longest_name
+    if player[0].length > longest_name.length
       longest_name = player[0]
     end
   end
