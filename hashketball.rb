@@ -123,8 +123,8 @@ def teams
   game_hash.values
 end
 
-def get_team(name)
-  teams.find {|team| team.fetch(:team_name) == name}
+def get_team(team)
+  teams.find {|x| x.fetch(:team_name) == team}
 end
 
 def num_points_scored(player)
